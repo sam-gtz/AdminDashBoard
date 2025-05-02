@@ -1,5 +1,12 @@
-@import "tailwindcss";
+@import "tailwindcss/preflight";
 
-@tailwind base;
+/* @import "tailwindcss";*/
+
+/* @tailwind base;
 @tailwind components;
-@tailwind utilities;
+@tailwind utilities;  */
+
+@import "tailwindcss/theme.css" layer(theme);
+@import "tailwindcss/preflight.css" layer(base);
+@import "tailwindcss/utilities.css" layer(utilities);
+@layer theme, base, components, utilities; 
