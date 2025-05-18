@@ -2,6 +2,8 @@ import Header from '../components/common/Header';
 import StatCard from '../components/common/StatCard';
 import { motion } from 'framer-motion'
 import { BarChart2, ShoppingBag, Users, Zap } from "lucide-react";
+import SalesOverviewChart from '../components/overview/SalesChannelChart';
+import CategoryDistributionChart from '../components/overview/CategoryDistributionChart';
 
 
 const OverviewPage = () => {
@@ -21,6 +23,8 @@ const OverviewPage = () => {
 					<StatCard name='Total Products' icon={ShoppingBag} value='567' color='#EC4899' />
 					<StatCard name='Conversion Rate' icon={BarChart2} value='12.5%' color='#10B981' />
                 </motion.div>
+                <SalesOverviewChart />
+                <CategoryDistributionChart />
 
 
             </main>
